@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9EBDE"
+    tools:context=".ShowTestFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q1textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q1. 코드 설계에서 일정한 일련번호를 부여하는 방식의 코드는?"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/Q1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="연상 코드" />
+
+            <CheckBox
+                android:id="@+id/Q1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="블록 코드" />
+
+            <CheckBox
+                android:id="@+id/Q1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="순차 코드" />
+
+            <CheckBox
+                android:id="@+id/Q1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="표의 숫자 코드" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/endbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#815854"
+                    android:text="정답 확인"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/gobackbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#815854"
+                    android:text="돌아가기"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
